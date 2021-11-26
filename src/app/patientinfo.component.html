@@ -1,0 +1,77 @@
+<nav class="blue-grey z-depth-0">
+    <div class="navbar-fixed">
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a >Mon Profil</a></li>
+        <li><a [routerLink]="['../exercices']">Liste d'exercice</a></li>
+        <li><a [routerLink]="['../patientinfo']" >Patient</a></li>
+        <li><div class="search-container">
+            <div class="search-icon-btn">
+              <i class="fa fa-search"></i>
+            </div>
+            <div class="search-input">
+              <input type="search" class="search-bar" placeholder="Search...">
+            </div>
+          </div></li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+<table>
+  <thead>
+      <tr>
+          <th>Nom et Prenom</th>
+          <th>Tel</th>
+          <th>Email</th>
+          <th>Action</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>patient1</td>
+          <td>23</td>
+          <td>65</td>
+          <td><div>
+              <a [routerLink]="['/contactmed']"><button class="button-three">envoyer un message</button></a>
+          </div>
+          <div>
+            <button class="button-three">supprimer</button>
+          </div></td>
+      </tr>
+      <tr>
+          <td>patient2</td>
+          <td>34</td>
+          <td>89</td>
+          <td><div>
+              <a [routerLink]="['/contactmed']"><button class="button-three">envoyer un message</button></a>
+          </div>
+          <div>
+            <button class="button-three">supprimer</button>
+          </div></td>
+      </tr>
+      <tr>
+          <td>patient3</td>
+          <td>32</td>
+          <td>76</td>
+          <td><div>
+              <a [routerLink]="['/contactmed']"><button class="button-three">envoyer un message</button></a>
+          </div>
+          <div>
+            <button class="button-three">supprimer</button>
+          </div></td>
+      </tr>
+      <tr>
+          <td>patient4</td>
+          <td>18</td>
+          <td>98</td>
+          <td><div>
+              <a [routerLink]="['/contactmed']"><button class="button-three">envoyer un message</button></a>
+          </div>
+          <div>
+            <button class="button-three">supprimer</button>
+          </div></td>
+      </tr>
+  </tbody>
+</table>
+<router-outlet></router-outlet>

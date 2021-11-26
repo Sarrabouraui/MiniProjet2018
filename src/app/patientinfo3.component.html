@@ -1,0 +1,83 @@
+<nav class="blue-grey z-depth-0">
+    <div class="navbar-fixed">
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a [routerLink]="['../profiladmin']">Mon Profil</a></li>
+        <li><a [routerLink]="['../docinfo3']">Medecins</a></li>
+        <li><a [routerLink]="['../patientinfo3']" >Patient</a></li>
+        <li><a [routerLink]="['../modifpatient']" >Modifier le compte</a></li>
+        <li><div class="search-container">
+            <div class="search-icon-btn">
+              <i class="fa fa-search"></i>
+            </div>
+            <div class="search-input">
+              <input type="search" class="search-bar" placeholder="Search...">
+            </div>
+          </div></li>
+      </ul>
+    </div>
+  </nav>
+
+<h4 style="margin-left: 10px">Liste des patients</h4>
+
+<table>
+  <thead>
+      <tr>
+          <th>Nom et Prenom</th>
+          <th>Tel</th>
+          <th>Email</th>
+          <th>Action</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>patient1</td>
+          <td>23988255</td>
+          <td>patient1@gmail.com</td>
+          <td><!--<div>
+              <a [routerLink]="['/modifpatient']">
+                <button class="button-three">modifier les données</button></a>
+          </div>-->
+          <div>
+            <button class="button-three"><a>supprimer</a></button>
+          </div></td>
+      </tr>
+      <tr>
+          <td>patient2</td>
+          <td>34756145</td>
+          <td>patient2@gmail.com</td>
+          <td><!--<div>
+            <a [routerLink]="['/modifpatient']">
+            <button class="button-three">modifier les données</button></a>
+          </div>-->
+          <div>
+            <button class="button-three">supprimer</button>
+          </div></td>
+      </tr>
+      <tr>
+          <td>patient3</td>
+          <td>32265745</td>
+          <td>patient3@gmail.com</td>
+          <td><!--<div>
+             <a [routerLink]="['/modifpatient']">
+            <button class="button-three">modifier les données</button></a>
+          </div>-->
+          <div>
+            <button class="button-three">supprimer</button>
+          </div></td>
+      </tr>
+      <tr>
+          <td>patient4</td>
+          <td>28635478</td>
+          <td>patient4@gmail.com</td>
+          <td><!--<div>
+            <a [routerLink]="['/contactmed']">
+            <button class="button-three">modifier les données</button></a>
+          </div>-->
+          <div>
+            <button class="button-three">supprimer</button>
+          </div></td>
+      </tr>
+  </tbody>
+</table>
+<router-outlet></router-outlet>
+<object data="" type=""></object>

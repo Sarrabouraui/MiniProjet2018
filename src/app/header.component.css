@@ -1,0 +1,19 @@
+.section{
+   size: 100%;
+    background-image: url("2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+.navbar-fixed{
+    margin: 0%;
+    padding: 0%;
+}
+
+.sec2{
+    position: relative;
+    /*left: 850px;*/
+    
+    width: 150px;
+}
+

@@ -1,0 +1,56 @@
+<div class="container"></div>
+
+<div class="container">
+
+    <div class="form-sec">
+      <h4>ajouter un exercice </h4>
+      
+     <form name="qryform" id="qryform" method="post" action="mail.php" onsubmit="return(validate());" novalidate="novalidate">
+        <div class="form-group">
+          <label>Numéro de l'exercice:</label>
+          <input type="text" class="form-control" id="name" name="name">
+        </div>
+        <div class="form-group">
+            <label>Patient:</label>
+            <input type="text" class="form-control" id="name" name="name">
+          </div>
+        <div class="form-group">
+          <label>Description:</label>
+          <textarea name="issues" class="form-control" id="iq"></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label>Durée de l'exercice:</label>
+          <div class="container">
+              <div class="col-sm-5">
+                     <select name="type" id="type" class="form-control">
+                       <option selected>Durée</option>
+                       <option value="1">30min</option>
+                       <option value="2">1h</option>
+                       <option value="3">2h</option>
+                     </select>
+                   </div>
+                 </div>
+        </div>	 
+      <div class="form-group">
+          <label>Type de l'exercice:</label>
+          <div class="container">
+              <div class="col-sm-5">
+                     <select name="type" id="type" class="form-control">
+                       <option selected>type</option>
+                       <option value="1">Marche</option>
+                       <option value="2">Course</option>
+                     </select>
+                   </div>
+                 </div>
+        </div>
+      
+        
+        <button type="submit" class="btn btn-default" [routerLink]="['../profilmed']">Enregistrer</button>
+        
+        <button type="reset" class="btn btn-default" style="margin-left : 10px">Reset</button>
+      </form>
+      </div>
+    
+    
+    </div>

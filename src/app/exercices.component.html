@@ -1,0 +1,101 @@
+
+
+<nav class="blue-grey z-depth-0">
+    <div class="navbar-fixed">
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a [routerLink]="['../profilpat']">Mon Profil</a></li>
+        <li><a [routerLink]="['../exercices']">Consulter les exercices</a></li>
+        <li><a [routerLink]="['../docinfo']" >Médecin</a></li>
+        <li><div class="search-container">
+            <div class="search-icon-btn">
+              <i class="fa fa-search"></i>
+            </div>
+            <div class="search-input">
+              <input type="search" class="search-bar" placeholder="Search...">
+            </div>
+          </div></li>
+      </ul>
+    </div>
+  </nav>
+
+  <h4 style="margin-left : 10px">Liste des exercices</h4>
+
+<table>
+   <thead>
+       <tr>
+           <th>N°</th>
+           <th>Type</th>
+           <th>Description</th>
+           <th>Durée</th>
+           <th>Statistiques</th>
+       </tr>
+   </thead>
+   <tbody>
+       <tr>
+           <td>1</td>
+           <td>  <div class="container">
+               
+                       <select name="type" id="type" class="form-control">
+                         <option selected="selected">type</option>
+                         <option value="1">Marche</option>
+                         <option value="2">Course</option>
+                       </select>
+                     
+                   </div></td>
+           <td>les bienfaits de l'exercice:<br> la dépense des calories </td>
+           <td><div class="container">
+                
+                       <select name="type" id="type" class="form-control">
+                         <option selected>Durée</option>
+                         <option value="1">30min</option>
+                         <option value="2">1h</option>
+                         <option value="3">2h</option>
+                       </select>
+                     
+                   </div></td>
+           <td>
+             <div id="container1">
+                <a [routerLink]="['/pressionplantaire']">
+                  <button class="learn-more" >
+                    <div class="circle">
+                      <span class="icon arrow"></span>
+                    </div>
+                    <p class="button-text">Détails</p>
+                  </button></a>
+                </div></td>
+       </tr>
+       <tr>
+           <td>2</td>
+           <td> <div class="container">
+               
+                       <select name="type" id="type" class="form-control">
+                         <option selected>type</option>
+                         <option value="1">Marche</option>
+                         <option value="2">Course</option>
+                       </select>
+                   
+                   </div></td>
+          <td>les bienfaits de l'exercice:<br> la dépense des calories</td>
+           <td> <div class="container">
+                
+                       <select name="type" id="type" class="form-control">
+                         <option selected>Durée</option>
+                         <option value="1">30min</option>
+                         <option value="2">1h</option>
+                         <option value="3">2h</option>
+                       </select>
+                   
+                   </div></td>
+                   <td><div id="container1">
+                      <a [routerLink]="['/pressionplantaire']">
+                      <button class="learn-more">
+                        <div class="circle">
+                          <span class="icon arrow"></span>
+                        </div>
+                        <p class="button-text">Détails</p>
+                      </button></a>
+                    </div></td>      
+          </tr>
+    </tbody>
+ </table>
+<router-outlet></router-outlet>

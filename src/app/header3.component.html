@@ -1,0 +1,16 @@
+
+<nav class="blue-grey z-depth-0">
+    <div class="navbar-fixed">
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a [routerLink]="['../profiladmin']">Mon Profil</a></li>
+        <li><a [routerLink]="['../docinfo3']">Medecins</a></li>
+        <li><a [routerLink]="['../patientinfo3']" >Patient</a></li>
+        <li><a [routerLink]="['../modifpatient']" >Modifier le compte</a></li>
+        
+        <li class="sec2"><div class="btn" [routerLink]="['../accueil']">Deconnexion</div></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <router-outlet></router-outlet>

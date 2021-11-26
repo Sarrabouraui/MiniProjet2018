@@ -1,0 +1,75 @@
+<div class="s-layout">
+      <!-- Sidebar -->
+      <div class="s-layout__sidebar">
+        <a class="s-sidebar__trigger" href="#0">
+           <i class="fa fa-bars"></i>
+        </a>
+      
+        <nav class="s-sidebar__nav">
+           <ul>
+              <li>
+                 <a class="s-sidebar__nav-link" [routerLink]="['../pressionplantaire']">
+                  <!--  <i class="fa fa-shoe-prints"></i>-->
+                  <em>pressionplantaire</em>
+                 </a>
+              </li>
+              <li>
+                 <a class="s-sidebar__nav-link" [routerLink]="['../vitesse']">
+                      <!--<i class="material-icons">shutter_speed</i>-->
+                      <em>Vitesse</em>
+                 </a>
+              </li>
+              <li>
+                      <a class="s-sidebar__nav-link" [routerLink]="['../calories']">
+                        <!--<i class="fa fa-fire-alt"></i>-->
+                        <em>Calories</em>
+                      </a>
+                   </li>
+                   <li>
+                      <a class="s-sidebar__nav-link" [routerLink]="['../rythme']">
+                      <!--<i class="fa fa-user"></i>-->
+                      <em>Rythme</em>
+                      </a>
+                  </li>
+                  <li>
+                      <a class="s-sidebar__nav-link" [routerLink]="['../cadence']">
+                      <!--<i class="fa fa-user"></i>-->
+                      <em>Cadence</em>
+                      </a>
+                  </li>
+                  <li>
+                      <a class="s-sidebar__nav-link" [routerLink]="['../nbpas']">
+                      <!--<i class="fa fa-user"></i>-->
+                      <em>Nombre de pas</em>
+                      </a>
+                </li>
+              <li>
+                 <a class="s-sidebar__nav-link" [routerLink]="['../distance']">
+                  <!--  <i class="fa fa-camera"></i>-->
+                  <em>Distance</em>
+                 </a>
+              </li>
+           </ul>
+        </nav>
+      </div>
+  
+    
+    <!-- Content -->
+    <main class="s-layout__content">
+      <!--<h1>Détails sur les calories</h1>-->
+      <section class="sec"></section>
+      <div id="container1">
+         <a [routerLink]="['/exercices2']">
+         <button class="learn-more">
+           <div class="circle">
+             <span class="icon arrow"></span>
+           </div>
+           <p class="button-text">Retour</p>
+         </button></a>
+       </div>
+
+    </main>
+
+
+
+<router-outlet></router-outlet>
